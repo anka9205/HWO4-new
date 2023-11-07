@@ -3,6 +3,6 @@ on: [push]
 
 jobs:
     test:
-        runs-on: Windows,
+        runs-on: Windows
         steps:
         - run: test_shuffle.py
