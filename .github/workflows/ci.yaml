@@ -1,0 +1,8 @@
+name: CI Workflow
+on: [push]
+
+jobs:
+    test:
+        runs-on: Windows,
+        steps:
+        - run: test_shuffle.py
