@@ -5,4 +5,4 @@ jobs:
     test:
         runs-on: Windows-latest
         steps:
-        - run: test_shuffle.py
+        - run: test_shuffle_key.py
