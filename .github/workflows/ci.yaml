@@ -4,7 +4,10 @@ on: [push]
 jobs:
     test:
         runs-on: Windows-latest
+        env:
+            ssh_key: ${{ secrets.SSH_KEY }}
         steps:
         - uses: actions/checkout@v3
+        - run: echo $ssh_key
         - run: python3 test_shuffle_key.py
         - run: echo OK
