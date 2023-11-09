@@ -1,6 +1,6 @@
 # HWO4-new
 
-![Static Badge](https://img.shields.io/badge/any_text-you_like-blue)
+![GitHub pull request check state](https://img.shields.io/github/status/s/pulls/anka9205/HWO4-new/1?label=Tests)
 
 
 
