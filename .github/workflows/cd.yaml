@@ -11,8 +11,7 @@ jobs:
         - name: Run tests
         - run: python3 test_shuffle_key.py
         - name: Set ssh key
-        - run: |
-            mkdir -p ~/.ssh && \
+        - run: mkdir -p ~/.ssh && \
             echo "$ssh_key" | base64 -d > ~/.ssh/id_rsa && \
             chmod 0600 ~/.ssh/id_rsa
         - name:  list remote dir   
