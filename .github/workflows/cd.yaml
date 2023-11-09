@@ -1,6 +1,5 @@
 name: CD Workflow
 on: [push]
-
 jobs:
     test:
         runs-on: Ubuntu-latest
