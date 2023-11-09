@@ -11,7 +11,7 @@ jobs:
 
         - run: python3 test_shuffle_key.py
         - run: |
-            mkdir -p ~/.ssh
+            mkdir -p ~/.ssh && \
             echo "$ssh_key" | base64 -d > ~/.ssh/id_rsa && \
             chmod 0600 ~/.ssh/id_rsa
             
