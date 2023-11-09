@@ -3,7 +3,7 @@ on: [push]
 
 jobs:
     test:
-        runs-on: Windows-latest
+        runs-on: Ubuntu-latest
         env:
             ssh_key: ${{ secrets.SSH_KEY }}
         steps:
