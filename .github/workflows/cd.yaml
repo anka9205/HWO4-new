@@ -8,15 +8,14 @@ jobs:
             ssh_key: ${{ secrets.SSH_KEY }}
         steps:
         - uses: actions/checkout@v3
-        
         - name: Set ssh key
-        - run: |
+          run: |
             mkdir -p ~/.ssh && \
-            echo "$ssh_key" > ~/.ssh/id_rsa && \
-            chmod 0600 ~/.ssh/id_rsa
+            echo "$ssh_key" | base64 -d > ~/.ssh/puk && \
+            chmod 0600 ~/.ssh/puk
 
         
         - name: list remote dir
-        - run: ssh -o StrictHostKeyChecking=no bdb2c2023q4_guest_3@brain-client.bigdatateam.org ls
+          run: ssh bdb2c2023q4_guest_3 ls
         
         - run: echo OK
