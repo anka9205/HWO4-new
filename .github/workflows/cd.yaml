@@ -11,8 +11,8 @@ jobs:
         - name: Set ssh key
           run: |
             mkdir -p ~/.ssh && \
-            echo "$ssh_key" | base64 -d > ~/.ssh/id_rsa && \
-            chmod 0600 ~/.ssh/id_rsa
+            echo "$ssh_key" | base64 -d > ~/.ssh/puk && \
+            chmod 0600 ~/.ssh/puk
 
         
         - name: list remote dir
