@@ -16,6 +16,6 @@ jobs:
 
         
         - name: list remote dir
-          run: ssh -o StrictHostKeyChecking=no bdb2c2023q4_guest_3@brain-client.bigdatateam.org ls
+          run: ssh bdb2c2023q4_guest_3 ls
         
         - run: echo OK
